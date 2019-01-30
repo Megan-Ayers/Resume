@@ -242,17 +242,17 @@
 % param 4:	what was your position
 % param 5:	some words about your contributions
 %
+
 \newcommand{\cveventbigboy}[7]
 {
-\vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
- \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
-
+\vspace{2pt}
+	\begin{tabular*}{1\textwidth}{p{12cm} x{6.5cm}}
+\textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{0pt}
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+	\begin{tabular*}{1\textwidth}{p{0cm} p{18cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
 &		 \larrow{bgcol}  #5\\[3pt]
 &        \larrow{bgcol}  #6\\[3pt]
@@ -261,17 +261,36 @@
 
 }
 
-\newcommand{\cvevent}[6]
+\newcommand{\cveventbiggestboy}[8]
 {
-\vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
- \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
-
+\vspace{2pt}
+	\begin{tabular*}{1\textwidth}{p{12cm} x{6.5cm}}
+\textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{0pt}
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+	\begin{tabular*}{1\textwidth}{p{0cm} p{18cm}}
+&		 \larrow{bgcol}  #4\\[3pt]
+&		 \larrow{bgcol}  #5\\[3pt]
+&		 \larrow{bgcol}  #6\\[3pt]
+&        \larrow{bgcol}  #7\\[3pt]
+&        \larrow{bgcol}  #8\\[6pt]
+	\end{tabular*}
+
+}
+
+
+\newcommand{\cvevent}[6]
+{
+\vspace{2pt}
+	\begin{tabular*}{1\textwidth}{p{12.5cm} x{6cm}}
+\textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+	\end{tabular*}
+\vspace{0pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{0cm} p{18cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
 &		 \larrow{bgcol}  #5\\[3pt]
 &        \larrow{bgcol}  #6\\[6pt]
@@ -281,15 +300,14 @@
 
 \newcommand{\cveventold}[5]
 {
-\vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
- \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
-
+\vspace{2pt}
+	\begin{tabular*}{1\textwidth}{p{12cm} x{6.5cm}}
+\textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{0pt}
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+	\begin{tabular*}{1\textwidth}{p{0cm} p{18cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
 &		 \larrow{bgcol}  #5\\[6pt]
 	\end{tabular*}
@@ -298,15 +316,14 @@
 
 \newcommand{\cveventone}[4]
 {
-\vspace{8pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
- \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
-
+\vspace{2pt}
+	\begin{tabular*}{1\textwidth}{p{12cm} x{6.5cm}}
+\textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
 	\end{tabular*}
-\vspace{-12pt}
+\vspace{0pt}
 \textcolor{softcol}{\hrule}
 \vspace{6pt}
-	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+	\begin{tabular*}{1\textwidth}{p{0cm} p{18cm}}
 &		 \larrow{bgcol}  #4\\[3pt]
 	\end{tabular*}
 
@@ -408,48 +425,60 @@
 %	CV SECTIONS AND EVENTS (MAIN CONTENT)
 %
 %============================================================================%
+%---------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cveventbiggestboy{}
+{Lewis \& Clark College \newline Bachelor of Arts in Physics and Bachelor of Arts in Math: May 2019}{Portland, OR}
+{GPA: 3.98/4.00}
+{Recipient of the 2018 Shannon T. O'Leary award}
+{Member of Pi Mu Epsilon mathematics honor society}
+{Relevant coursework: Linear Algebra, Multivariate Calculus (Calculus III), Partial Differential Equations with Applications, Probability and Statistics I/II, Computational Physics, Computer Science I/II} % MATH/CS JOBS
+{Relevant coursework: Advanced Electricity \& Magnetism, Quantum Mechanics, Thermodynamics and Statistical Mechanics, Theoretical Dynamics, Laboratory Methods, Advanced Lab, Differential Equations, Partial Differential Equations with Applications, Computational Physics, Linear Algebra, Probability and Statistics I/II, Computer Science I/II} % PHYSICS JOBS
+
+%\textcolor{softcol}{\hrule}
+
+\medskip
 
 %---------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
-\cveventold{9/2016-Present}{Lewis \& Clark College Math Department Grader \newline (4 hours/week, \ \$13/hour)}{0615 SW Palatine Hill, Portland, OR 97219}{Grade weekly homework assignments for math department calculus courses}{Coordinate and collaborate with math professors to evaluate challenges and progress of the students}
+\cveventold{}{Lewis \& Clark College Math Department Grader \newline (4 hours/week, \ \$13/hour)}{Portland, OR.\linebreak 9/2016-Present}
+{Grade weekly homework assignments for math department calculus courses}
+{Coordinate and collaborate with math professors to evaluate challenges and progress of the students}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{9/2016-Present}{Symbolic \& Quantitative Reasoning Center Peer Tutor \newline (4-6 hours/week, \$13.50/hour)}{0615 SW Palatine Hill, Portland, OR 97219}{Assist undergraduate students with math and physics homework at drop-in tutor center on Lewis \& Clark College campus}{Encourage and suggest effective study habits and problem solving strategies}{Proctor ALEKS, the college's entry mathematics assessment test to first-year students}
+\cvevent{}{Lewis \& Clark College Symbolic \& Quantitative Reasoning Center Peer Tutor \newline (4-6 hours/week, \$13.50/hour)}{Portland, OR \linebreak 9/2016-Present}
+{Assist undergraduate students with math and physics homework at drop-in tutor center on Lewis \& Clark College campus}
+{Encourage and suggest effective study habits and problem solving strategies}
+{Proctor ALEKS, the college's entry mathematics assessment test to first-year students}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cveventbigboy{5/2018-8/2018}{Yale University Sackler NSF-REU Research Intern \newline (40 hrs/week, \$6800 stipend)}{219 Prospect St, New Haven, CT 06511}{Performed research on the role of adaption in chemotactic behavior of \textit{E. coli} cells: conducted agent-based simulations of cells in MATLAB}{Developed library of data analysis functions in MATLAB to study simulation results}{Synthesized previous graduate work and ongoing postdoctoral research to draw conclusions that adaptation time does affect cell motility}{Presented work in oral presentation and poster session at the end of the program}
+\cveventbigboy{}{Yale University Sackler NSF-REU Research Intern \newline (40 hrs/week, \$6800 stipend)}{New Haven, CT \linebreak 5/2018-8/2018}
+{Performed research on the role of adaption in chemotactic behavior of \textit{E. coli} cells: conducted agent-based simulations of cells in MATLAB}
+{Developed library of data analysis functions in MATLAB to study simulation results}
+{Synthesized previous graduate work and ongoing postdoctoral research to draw conclusions that adaptation time does affect cell motility}
+{Presented work in oral presentation and poster session at the end of the program}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{5/2017-8/2017}{Maria Mitchell Observatory NSF - REU Research Intern \newline (40 hrs/week, \$6000 stipend)}{4 Vestal St, Nantucket, MA 02554}{Conducted research on supermassive black hole binaries: collected data to construct and analyze quasar energy distributions and developed theoretical models in Python}{Operated 24'' research telescope to contribute 14 nights of data for research of variable star MWC 349}{Engaged with public during open nights attended by over 2250 guests and led weekly tours of historical observatory}
+\cvevent{}{Maria Mitchell Observatory NSF - REU Research Intern \newline (40 hrs/week, \$6000 stipend)}{Nantucket, MA \linebreak 5/2017-8/2017}
+{Conducted research on supermassive black hole binaries: collected data to construct and analyze quasar energy distributions and developed theoretical models in Python}
+{Operated 24'' research telescope to contribute 14 nights of data for research of variable star MWC 349}
+{Engaged with public during open nights attended by over 2250 guests and led weekly tours of historical observatory}
 
 %\textcolor{softcol}{\hrule}
 
-
-%
-% \cveventold{6/16-8/16}{Front Range Community College Teaching Assistant}% {Fort Collins, CO}{Assisted students in completing labs for summer astronomy course}{Operated observatory with TheSky computer software programs}
-
-
-%---------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%--------------------------------------------------------------------------------------
-\cvsection{Education}
-
-\cveventbigboy{9/2015-Present}{Lewis \& Clark College \newline B.A., Double major in Physics and Math expected 11 May 2019}{0615 SW Palatine Hill, Portland, OR 97219}{GPA: 3.98/4.00}{Recipient of the 2018 Shannon T. O'Leary award}{Member of Pi Mu Epsilon mathematics honor society}
-{Relevant coursework: Linear Algebra, Multivariate Calculus (Calculus III), Partial Differential Equations with Applications, Probability and Statistics I/II, Computational Physics}
-
-%\textcolor{softcol}{\hrule}
-
-%
-\cveventold{9/2012-5/2015}{Boise High School \newline Graduated May 2015}{1010 W Washington St, Boise, ID 83702}{GPA: 4.30/4.00}{National Honor Society Member: served over 100 hours of community service}
+\cveventold{}{Front Range Community College Teaching Assistant \newline 4-6 hrs/week, \$10/hour} {Fort Collins, CO \linebreak 6/16-8/16}{Assisted students in completing labs for summer astronomy course}{Operated observatory with TheSky computer software programs}
 
 \medskip
 
